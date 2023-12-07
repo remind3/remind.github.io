@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Adaptive</title>
+  
+</head>
+<style>
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(122, 49, 49);
+  }
+  
+  header .logo {
+    margin-right: 10px;
+  }
+  
+  header .content {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  header div{
+    margin-right: 10px;
+  }
+  
+  p {
+    text-align: center;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 40px;
+  }
+  
+  body {
+    font-family: 'Times New Roman', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  }
+  
+  .title-block{
+  max-width: 80%;
+  margin: 0 auto;
+  }
+  
+  .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  }
+  
+  .col {
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+  margin: 10px;
+  flex-basis: calc(33.33% - 20px);
+  }
+  
+  .col img {
+    width: 100%;
+    height: 400px;
+  }
+  
+  .text-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  color: rgb(63, 224, 208);
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  }
+  
+  @media (min-width: 200px) and (max-width: 600px) {
+    .col {
+      flex-basis: calc(100% - 20px);
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 990px) {
+    .col {
+      flex-basis: calc(50% - 20px);
+    }
+    .h1 {
+      text-align: center;
+      font-size: 35px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .col img {
+      height: 300px;
+    }
+    .h1 {
+      text-align: center;
+      font-size: 30px;
+    }
+  }
+  </style>
+<body>
+  <header>
+    <div class="logo">Logo pic</div>
+    <div class="content">
+      <div>Home</div>
+      <div>About</div>
+      <div>Contact</div>
+      <div>Account</div>
+    </div>
+  </header>
+
+  <main>
+    <div class="title-block">
+      <h1>Vibe plases</h1>
+      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa</p>
+    </div>
+    <div class="container">
+      <div class="col">
+        <p class="text-img"></p>
+        <img src = "https://upload.wikimedia.org/wikipedia/commons/c/cb/Big_field._-_geograph.org.uk_-_141390.jpg">
+      </div>
+      <div class="col">
+        <p class="text-img"></p>
+        <img src = "https://i.pinimg.com/736x/a2/2e/14/a22e140693f86e38359ff824dee51558.jpg">
+      </div>
+      <div class="col">
+        <p class="text-img"></p>
+        <img src = "https://images.squarespace-cdn.com/content/v1/5bb9f390da50d330b261fdc8/1615231295778-RDJE1L1L5HCNAWAST0RD/90+copy.jpg">
+      </div>
+      <div class="col">
+        <p class="text-img"></p>
+        <img src = "https://www.shutterstock.com/image-photo/beautiful-deep-forest-scene-light-600nw-2160508847.jpg">
+      </div>
+      <div class="col">
+        <p class="text-img"></p>
+        <img src = "https://img.freepik.com/premium-photo/winter-landscape-sunrise-in-the-mountains-beautiful-world-christmas-scene-carpathians-ukraine-europe_209487-1601.jpg">
+      </div>
+      <div class="col">
+        <p class="text-img"></p>
+        <img src = "https://saletur.ru/galery/tfoto/big/115/80/1158072.jpg">
+      </div>
+    </div>
+  </main>
+</body>
+</html>
